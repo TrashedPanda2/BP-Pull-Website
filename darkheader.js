@@ -1,0 +1,15 @@
+window.loadDarkHeader = function(attachTo) {
+  if (!window.FinisherHeader) return;
+  new FinisherHeader({
+    attachTo,
+    count: 90,
+    size: { min: 1, max: 20, pulse: 0 },
+    speed: { x: { min: 0, max: 0.4 }, y: { min: 0, max: 0.1 } },
+    colors: { background: "#000000", particles: ["#40ff00"] },
+    blending: "screen",
+    opacity: { center: 0, edge: 0.5 },
+    skew: -2,
+    shapes: ["c","s","t"]
+  });
+}
+
